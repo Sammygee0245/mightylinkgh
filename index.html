@@ -10,8 +10,12 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+    <link rel="icon" href="pics/logomighty.png" type="pics/logomighty.png" />
   </head>
   <body>
+    <div class="loader-div">
+      <img style="width:100vw; height:100vh; object-fit: contain;" src="pics/loading (1).gif" alt="">
+    </div>
     <!-- full navigation -->
     <nav class="full-nav">
       <!-- Top navigation -->
@@ -29,7 +33,7 @@
             <i class="fa-solid fa-envelope"></i>
             <div>
               <p class="tele">Email</p>
-              <p class="tele-num">mightylink0244@gmail.com</p>
+              <p class="tele-num">mightylinkgh@gmail.com</p>
             </div>
           </div>
 
@@ -38,7 +42,7 @@
             <div>
               <p class="tele">Office Address</p>
               <p class="tele-num">
-                6161 Busch Blvd, Suite 91 Ghana Accra, 43229
+                Gs-0305-1154
               </p>
             </div>
           </div>
@@ -49,7 +53,9 @@
       <div class="bottom-nav">
         <div style="position: relative">
           <p style="position: absolute; top: 8px; right: 0">GH</p>
-          <img class="logo" src="pics/logomighty.png" alt="" />
+          <a href="index.html">
+            <img class="logo" src="pics/logomighty.png" alt="" />
+          </a>
         </div>
         <ul class="ul1">
           <li class="list1">
@@ -114,14 +120,15 @@
       </ul>
       <div id="appoint" class="appointm">
         <div class="cancel"><i class="fas fa-x"></i></div>
-        <form class="appbook" action="#">
+        <form class="appbook" action="https://formspree.io/f/mayzalqj"
+        method="POST">
           <input class="oheneba" name="FullName" type="text" placeholder="Fullname" required>
           <input class="oheneba" name="Phone" type="number" placeholder="Tele" required>
           <input class="oheneba" name="Email" type="email" placeholder="Email" required>
           <input class="oheneba" name="datetime" type="datetime" placeholder="day_month_year">
 
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <button>Submit Email</button>
+          <textarea style="padding: 10px;outline: none;background-color: transparent;color: #fff;" name="Appointment message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+          <button>Submit Appointment</button>
         
         </form>
       </div>
@@ -134,12 +141,22 @@
         data-aos-duration="2000"
         class="overlay"
       >
-        <p class="greet">Welcome to</p>
-        <p class="intro">MIGHTY</p>
-        <p class="intro">LINK</p>
-        <p class="intro">ALUMINIUM</p>
-        <p class="intro">SYSTEM</p>
-        <p class="n1">Number one for</p>
+        <p class="greet" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1000">Welcome to</p>
+        <p class="intro" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">MIGHTY</p>
+        <p class="intro" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">LINK</p>
+        <p class="intro" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">ALUMINIUM</p>
+        <p class="intro" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">SYSTEM</p>
+        <p class="n1" >Number one for</p>
         <p class="n1">for ultramoden glass</p>
         <p class="n1">doors & windows</p>
         <button  class="book1">Book An Appointment</button>
@@ -157,30 +174,30 @@
       </div>
       <div class="down">
         <div data-aos="zoom-in" class="hg">
-          <img class="img" src="pics/gallery_img_2.jpg" alt="" />
+          <img class="img" src="pics/1 (1).jpg" alt="" />
           <div class="lable">
             <h3>Home</h3>
             <i class="fa-solid fa-arrow-right"></i>
           </div>
         </div>
         <div data-aos="zoom-in" class="bg">
-          <img class="img" src="pics/gallery_img_1.jpg" alt="" />
+          <img class="img" src="pics/1 (1).webp" alt="" />
           <div class="lable">
             <h3>Office</h3>
             <i class="fa-solid fa-arrow-right"></i>
           </div>
         </div>
         <div data-aos="zoom-in" class="ag">
-          <img class="img" src="pics/gallery_img_3.jpg" alt="" />
+          <img class="img" src="pics/1 (11).jpg" alt="" />
           <div class="lable">
             <h3>Work</h3>
             <i class="fa-solid fa-arrow-right"></i>
           </div>
         </div>
         <div data-aos="zoom-in" class="sg">
-          <img class="img" src="pics/p2.webp" alt="" />
+          <img class="img" src="pics/1 (12).jpg" alt="" />
           <div class="lable">
-            <h3>School</h3>
+            <h3>Mirror</h3>
             <i class="fa-solid fa-arrow-right"></i>
           </div>
         </div>
@@ -193,7 +210,7 @@
         <p class="pthp">We are here to help you</p>
         <p>
           Providing us with more details can help us assist you better. You can
-          also reach out to our customer support team at any time for further
+          also reach out to our <a style="color:red;" href="https://wa.me/2330504832431">customer support</a> team at any time for further
           assistance.
         </p>
         <hr />
@@ -215,7 +232,7 @@
         <div class="help">
           <i class="fa-solid fa-hourglass-end"></i>
           <h3>24/7 Repair</h3>
-          <p>Our customer service team are always-available to help.</p>
+          <p>Our  team are always-available to help.</p>
         </div>
         <div class="help">
           <i class="fa-solid fa-handshake"></i>
@@ -263,39 +280,27 @@
       </div>
       <div class="down4">
         <div class="client1">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non omnis
-            qui beatae deserunt inventore sunt obcaecati, dolorum quam dolore
-            temporibus ut quisquam architecto mollitia, saepe libero. Nam vitae
-            minus voluptatem! Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit. Non omnis qui beatae deserunt inventore sunt
-            obcaecati, dolorum quam dolore temporibus ut quisquam architecto
-            mollitia, saepe libero. Nam vitae minus voluptatem!
+          <p style="line-height: 25px;">
+            I worked with mighty link glazing service and they exceeded my expectations. Their work was exceptional, they used high-quality materials, and they understood my needs as a customer. They were professional, responsive, and provided expert advice. I highly recommend them to anyone looking for quality work and outstanding customer service.
           </p>
           <div class="cp">
-            <img class="c1p" src="pics/05.jpg" alt="" />
+            <img class="c1p" src="pics/Apostle.jpg" alt="" />
             <div>
-              <h3>Sammy Gee</h3>
-              <p>Proffesor</p>
+              <h3>Richard Kwame Owusu</h3>
+              <p>Apostle</p>
             </div>
           </div>
           <i class="fa-solid fa-quote-left"></i>
         </div>
         <div class="client1">
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non omnis
-            qui beatae deserunt inventore sunt obcaecati, dolorum quam dolore
-            temporibus ut quisquam architecto mollitia, saepe libero. Nam vitae
-            minus voluptatem! Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit. Non omnis qui beatae deserunt inventore sunt
-            obcaecati, dolorum quam dolore temporibus ut quisquam architecto
-            mollitia, saepe libero. Nam vitae minus voluptatem!
+            I recently used mighty link glazing service for a project and was blown away by their work. The team was skilled and knowledgeable, and the end result was flawless. They used top-quality materials, and their attention to detail was impressive. They were also friendly, easy to communicate with, and went above and beyond to ensure my satisfaction. I highly recommend this glazing service to anyone looking for a job well done.
           </p>
           <div class="cp">
-            <img class="c1p" src="pics/05.jpg" alt="" />
+            <i style="padding: 10px;font-size: 2rem;" class=" fa-solid fa-user-md " alt="" ></i>
             <div>
-              <h3>Sammy Gee</h3>
-              <p>Proffesor</p>
+              <h3>Mr Bempong</h3>
+              <p>Pharmacist</p>
             </div>
           </div>
           <i class="fa-solid fa-quote-left"></i>
@@ -317,24 +322,48 @@
             Special Offers
           </h3>
           <p style="margin-bottom: 20px">
-            Discover the latest savings on the best auto, home, business glass
+            Discover the latest savings on the best office, home, business and shop glass
             repair services in the industry.
           </p>
+          
+         <a href="https://wa.me/2330504832431">
           <button
-            style="
-              padding: 10px 30px;
-              background-color: blue;
-              color: #fff;
-              margin-bottom: 30px;
-              cursor: pointer;
-            "
-          >
-            Contact Us
-          </button>
+          style="
+            padding: 10px 30px;
+            background-color: blue;
+            color: #fff;
+            margin-bottom: 30px;
+            cursor: pointer;
+          "
+        >
+          Contact Us
+        </button>
+         </a>
         </div>
       </div>
       <div class="right">
-        <div class="card"></div>
+        <div class="card">
+        <div class="offer">
+          <div class="pohne">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <p style="color:#fff;" class="tele">Telephone</p>
+              <p style="color:#fff;" class="tele-num">(+233) 50-483-2431</p>
+            </div>
+          </div>
+        </div>
+        <div class="offer">
+          <p style="font-size: 3rem;font-weight: 600; font-family: sans-serif;color: gold;">20% OFF</p>
+          <br>
+          <p style="color:#fff">Any service of (GH&#8373 2,350)</p>
+        </div>
+        <div class="offer">
+          <p style="color:#fff">Get excited! We're offering an amazing deal - a 20% discount on our services! </p>
+          <p style="color:#fff">This offer won't last long, so act fast and save big. </p>
+          <p></p>
+        </div>
+        
+        </div>
       </div>
     </div>
 
@@ -350,22 +379,22 @@
       </div>
       <div class="down-six">
         <div class="hg">
-          <img class="img" src="pics/gallery_img_2.jpg" alt="" />
+          <img class="img" src="pics/ho1.jpg" alt="" />
           <div class="lable">
             <h3>Home</h3>
             <i class="fa-solid fa-bars"></i>
           </div>
         </div>
         <div class="bg">
-          <img class="img" src="pics/gallery_img_1.jpg" alt="" />
+          <img class="img" src="pics/1 (14).jpg" alt="" />
           <div class="lable">
-            <h3>Office</h3>
+            <h3>glass-enclosed bathroom</h3>
             <i class="fa-solid fa-bars"></i>
           </div>
         </div>
 
         <div class="hg">
-          <img class="img" src="pics/gallery_img_5.jpg" alt="" />
+          <img class="img" src="pics/1 (15).jpg" alt="" />
           <div class="lable">
             <h3>Home</h3>
             <i class="fa-solid fa-bars"></i>
@@ -380,16 +409,16 @@
         </div>
 
         <div class="ag">
-          <img class="img" src="pics/gallery_img_3.jpg" alt="" />
+          <img class="img" src="pics/1 (16).jpg" alt="" />
           <div class="lable">
-            <h3>Work</h3>
+            <h3>Apartment</h3>
             <i class="fa-solid fa-bars"></i>
           </div>
         </div>
         <div class="sg">
           <img class="img" src="pics/gallery_img_4.jpg" alt="" />
           <div class="lable">
-            <h3>School</h3>
+            <h3>Office</h3>
             <i class="fa-solid fa-bars"></i>
           </div>
         </div>
@@ -403,41 +432,45 @@
           <div class="col-md-3">
             <h4>About Us</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              rhoncus, nisl non bibendum porta, sapien purus molestie elit, ut
-              dignissim massa magna a augue.
+              Mighty Link GH are a team of professionals providing top-notch
+            glazing solutions for homes and businesses. With a focus on quality
+            and customer service, we specialize in windows, doors, skylights,
+            and curtain walls.
             </p>
           </div>
           <div class="col-md-3">
             <h4>Quick Links</h4>
             <ul class="quick-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="product.html">Product</a></li>
+              <li><a href="service.html">Gallery</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
             </ul>
           </div>
           <div class="col-md-3">
             <h4>Our Services</h4>
             <ul class="our-services">
-              <li><a href="#">Glass Replacement</a></li>
-              <li><a href="#">Glass Repair</a></li>
-              <li><a href="#">Window Tinting</a></li>
-              <li><a href="#">Shower Doors</a></li>
-              <li><a href="#">Mirrors</a></li>
+              <li>Glass Replacement</li>
+              <li>Glass Repair</li>
+              <li>Steelers</li>
+              <li>Shower Doors</li>
+              <li>Mirrors</li>
             </ul>
           </div>
           <div class="col-md-3">
             <h4>Contact Us</h4>
             <ul class="contact-us">
               <li>
-                <i class="fa fa-map-marker"></i>123 Main Street, Anytown, USA
+                <a href="https://wa.me/2330244755970">
+                  <i class="fa-brands fa-whatsapp"></i>
+                Whatsapp
+                </a>
               </li>
-              <li><i class="fa fa-phone"></i>555-555-1234</li>
+              <li><i class="fa fa-phone"></i>(233)244755970</li>
               <li>
                 <i class="fa fa-envelope"></i
-                ><a href="mailto:info@glazing.com">info@glazing.com</a>
+                ><a href="mailto:mightylinkgh@gmail.com?subject=hello">mightylinkgh@gmail.com</a>
               </li>
             </ul>
           </div>
@@ -454,5 +487,10 @@
       AOS.init();
     </script>
     <script src="index.js"></script>
+    <script>
+      window.addEventListener("load",()=>{
+        document.querySelector(".loader-div").style.display = "none"
+      })
+    </script>
   </body>
 </html>

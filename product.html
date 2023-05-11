@@ -11,6 +11,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+    <link rel="icon" href="pics/logomighty.png" type="pics/logomighty.png" />
 
     <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
@@ -20,6 +21,9 @@
     /> -->
   </head>
   <body>
+    <div class="loader-div">
+      <img style="width:100vw; height:100vh; object-fit: contain;" src="pics/loading (1).gif" alt="">
+    </div>
     <!-- full navigation -->
     <nav class="full-nav">
       <!-- Top navigation -->
@@ -37,7 +41,7 @@
             <i class="fa-solid fa-envelope"></i>
             <div>
               <p class="tele">Email</p>
-              <p class="tele-num">mightylink0244@gmail.com</p>
+              <p class="tele-num">mightylinkgh@gmail.com</p>
             </div>
           </div>
 
@@ -46,7 +50,7 @@
             <div>
               <p class="tele">Office Address</p>
               <p class="tele-num">
-                6161 Busch Blvd, Suite 91 Ghana Accra, 43229
+                Gs-0305-1154
               </p>
             </div>
           </div>
@@ -59,7 +63,9 @@
           <p style="position: absolute; top: 8px; right: 0; color: red">
             G<span style="color: gold">H</span>
           </p>
-          <img class="logo" src="pics/logomighty.png" alt="" />
+          <a href="index.html">
+            <img class="logo" src="pics/logomighty.png" alt="" />
+          </a>
         </div>
         <ul class="ul1">
           <li class="list1">
@@ -124,6 +130,19 @@
         </li>
         <button id="book" class="book">Book An Appointment</button>
       </ul>
+      <div id="appoint" class="appointm">
+        <div class="cancel"><i class="fas fa-x"></i></div>
+        <form class="appbook" action="#">
+          <input class="oheneba" name="FullName" type="text" placeholder="Fullname" required>
+          <input class="oheneba" name="Phone" type="number" placeholder="Tele" required>
+          <input class="oheneba" name="Email" type="email" placeholder="Email" required>
+          <input class="oheneba" name="datetime" type="datetime" placeholder="day_month_year">
+
+          <textarea style="padding: 10px;outline: none;" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+          <button>Submit Appointment</button>
+        
+        </form>
+      </div>
     </nav>
 
     <div class="prod-main">
@@ -145,46 +164,46 @@
       </div>
       <div class="down-six">
         <div data-aos="fade-right" class="hg">
-          <img class="img" src="pics/gtape.jpg" alt="" />
+          <img class="img" src="pics/1 (2).jpg" alt="" />
           <div class="lable">
-            <h3>Home</h3>
+            <h3>Aluminium bars</h3>
             <i class="fa-solid fa-bars"></i>
           </div>
         </div>
         <div class="bg">
-          <img class="img" src="pics/dg.jpg" alt="" />
+          <img class="img" src="pics/1 (10).jpg" alt="" />
           <div class="lable">
-            <h3>Office</h3>
+            <h3>Tempered Glass</h3>
             <i class="fa-solid fa-bars"></i>
           </div>
         </div>
 
         <div data-aos="fade-left" class="hg">
-          <img class="img" src="pics/al3.jpg" alt="" />
+          <img class="img" src="pics/1 (3).jpg" alt="" />
           <div class="lable">
-            <h3>Home</h3>
+            <h3>Windows</h3>
             <i class="fa-solid fa-bars"></i>
           </div>
         </div>
         <div data-aos="fade-right" class="bg">
           <img class="img" src="pics/al.jpg" alt="" />
           <div class="lable">
-            <h3>Office</h3>
+            <h3>Double glazzing</h3>
             <i class="fa-solid fa-bars"></i>
           </div>
         </div>
 
         <div class="ag">
-          <img class="img" src="pics/glass.jpg" alt="" />
+          <img class="img" src="pics/IMG_20221027_143426_544.jpg" alt="" />
           <div class="lable">
-            <h3>Work</h3>
+            <h3>Widows</h3>
             <i class="fa-solid fa-bars"></i>
           </div>
         </div>
         <div data-aos="fade-left" class="sg">
           <img class="img" src="pics/foam.jpg" alt="" />
           <div class="lable">
-            <h3>School</h3>
+            <h3>Silicon</h3>
             <i class="fa-solid fa-bars"></i>
           </div>
         </div>
@@ -205,15 +224,15 @@
 
       <div class="down3">
         <div class="help">
-          <i class="fa-solid fa-credit-card-alt"></i>
+          <i class="fa-brands fa-cc-mastercard  "></i>
           <h3>Affordable prices</h3>
           <p>Our service are reasonable,inexpensive & budget-friendly.</p>
         </div>
         <div class="help">
-          <i class="fa-solid fa-users"></i>
-          <h3>Qualified Experts</h3>
+          <i class="fa-solid fa-thumbs-up "></i>
+          <h3>30 Years of Experience</h3>
           <p>
-            We have Knowledgeable, experienced & skilled workers on our team.
+            30+ years of experience in home improvements for the best products, installations & advice.
           </p>
         </div>
         <div class="help">
@@ -259,54 +278,58 @@
     </div>
     
 
-    <!-- footer -->
-    <footer class="footer">
-      <div class="contain">
-        <div class="col">
-          <div class="col-md-3">
-            <h4>About Us</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              rhoncus, nisl non bibendum porta, sapien purus molestie elit, ut
-              dignissim massa magna a augue.
-            </p>
-          </div>
-          <div class="col-md-3">
-            <h4>Quick Links</h4>
-            <ul class="quick-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h4>Our Services</h4>
-            <ul class="our-services">
-              <li><a href="#">Glass Replacement</a></li>
-              <li><a href="#">Glass Repair</a></li>
-              <li><a href="#">Window Tinting</a></li>
-              <li><a href="#">Shower Doors</a></li>
-              <li><a href="#">Mirrors</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h4>Contact Us</h4>
-            <ul class="contact-us">
-              <li>
-                <i class="fa fa-map-marker"></i>123 Main Street, Anytown, USA
-              </li>
-              <li><i class="fa fa-phone"></i>555-555-1234</li>
-              <li>
-                <i class="fa fa-envelope"></i
-                ><a href="mailto:info@glazing.com">info@glazing.com</a>
-              </li>
-            </ul>
-          </div>
+   <!-- footer -->
+   <footer class="footer">
+    <div class="contain">
+      <div class="col">
+        <div class="col-md-3">
+          <h4>About Us</h4>
+          <p>
+            Mighty Link GH are a team of professionals providing top-notch
+          glazing solutions for homes and businesses. With a focus on quality
+          and customer service, we specialize in windows, doors, skylights,
+          and curtain walls.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h4>Quick Links</h4>
+          <ul class="quick-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="service.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>Our Services</h4>
+          <ul class="our-services">
+            <li>Glass Replacement</li>
+            <li>Glass Repair</li>
+            <li>Steelers</li>
+            <li>Shower Doors</li>
+            <li>Mirrors</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>Contact Us</h4>
+          <ul class="contact-us">
+            <li>
+              <a href="https://wa.me/2330244755970">
+                <i class="fa-brands fa-whatsapp"></i>
+              Whatsapp
+              </a>
+            </li>
+            <li><i class="fa fa-phone"></i>(233)244755970</li>
+            <li>
+              <i class="fa fa-envelope"></i
+              ><a href="mailto:mightylinkgh@gmail.com?subject=hello">mightylinkgh@gmail.com</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
     <div class="ft">
       <p>&copy; 2023 Mighty Link Aluminium System.</p>
     </div>
@@ -316,6 +339,11 @@
       AOS.init();
     </script>
   <script src="index.js"></script>
+  <script>
+    window.addEventListener("load",()=>{
+      document.querySelector(".loader-div").style.display = "none"
+    })
+  </script>
 </html>
 
 <!-- <main>

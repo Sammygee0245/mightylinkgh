@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="main.css" />
 
     <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+    <link rel="icon" href="pics/logomighty.png" type="pics/logomighty.png" />
 
     <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
@@ -20,6 +21,9 @@
     /> -->
   </head>
   <body>
+    <div class="loader-div">
+      <img style="width:100vw; height:100vh; object-fit: contain;" src="pics/loading (1).gif" alt="">
+    </div>
     <!-- full navigation -->
     <nav class="full-nav">
       <!-- Top navigation -->
@@ -37,7 +41,7 @@
             <i class="fa-solid fa-envelope"></i>
             <div>
               <p class="tele">Email</p>
-              <p class="tele-num">mightylink0244@gmail.com</p>
+              <p class="tele-num">mightylinkgh@gmail.com</p>
             </div>
           </div>
 
@@ -46,7 +50,7 @@
             <div>
               <p class="tele">Office Address</p>
               <p class="tele-num">
-                6161 Busch Blvd, Suite 91 Ghana Accra, 43229
+                Gs-0305-1154
               </p>
             </div>
           </div>
@@ -59,7 +63,9 @@
           <p style="position: absolute; top: 8px; right: 0; color: red">
             G<span style="color: gold">H</span>
           </p>
-          <img class="logo" src="pics/logomighty.png" alt="" />
+          <a href="index.html">
+            <img class="logo" src="pics/logomighty.png" alt="" />
+          </a>
         </div>
         <ul class="ul1">
           <li class="list1">
@@ -124,6 +130,19 @@
         </li>
         <button id="book" class="book">Book An Appointment</button>
       </ul>
+      <div id="appoint" class="appointm">
+        <div class="cancel"><i class="fas fa-x"></i></div>
+        <form class="appbook" action="#">
+          <input class="oheneba" name="FullName" type="text" placeholder="Fullname" required>
+          <input class="oheneba" name="Phone" type="number" placeholder="Tele" required>
+          <input class="oheneba" name="Email" type="email" placeholder="Email" required>
+          <input class="oheneba" name="datetime" type="datetime" placeholder="day_month_year">
+
+          <textarea style="padding: 10px;outline: none;" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+          <button>Submit Appointment</button>
+        
+        </form>
+      </div>
     </nav>
 
     <main class="mmaim">
@@ -177,8 +196,7 @@
                 WE INSTALL
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
-                ratione fugiat. Neque, beatae est
+                We install durable glass windows, doors, and steelers to enhance security and energy efficiency
               </p>
             </div>
           </div>
@@ -216,8 +234,7 @@
                 WE DELIVER
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
-                ratione fugiat. Neque, beatae est
+                We deliver secure and prompt glass window, door, and steelers for your satisfaction.
               </p>
             </div>
           </div>
@@ -255,8 +272,7 @@
                 AFFORDABLE PRICES
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
-                ratione fugiat. Neque, beatae est
+                We offer quality glass products at budget-friendly prices. Satisfaction guaranteed.
               </p>
             </div>
           </div>
@@ -294,8 +310,7 @@
                 WE'RE LOCAL TO YOU
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
-                ratione fugiat. Neque, beatae est
+                We're a local glazing company, familiar with building regulations, weather, and provide quick efficient services.
               </p>
             </div>
           </div>
@@ -343,41 +358,45 @@
           <div class="col-md-3">
             <h4>About Us</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              rhoncus, nisl non bibendum porta, sapien purus molestie elit, ut
-              dignissim massa magna a augue.
+              Mighty Link GH are a team of professionals providing top-notch
+            glazing solutions for homes and businesses. With a focus on quality
+            and customer service, we specialize in windows, doors, skylights,
+            and curtain walls.
             </p>
           </div>
           <div class="col-md-3">
             <h4>Quick Links</h4>
             <ul class="quick-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="product.html">Product</a></li>
+              <li><a href="service.html">Gallery</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
             </ul>
           </div>
           <div class="col-md-3">
             <h4>Our Services</h4>
             <ul class="our-services">
-              <li><a href="#">Glass Replacement</a></li>
-              <li><a href="#">Glass Repair</a></li>
-              <li><a href="#">Window Tinting</a></li>
-              <li><a href="#">Shower Doors</a></li>
-              <li><a href="#">Mirrors</a></li>
+              <li>Glass Replacement</li>
+              <li>Glass Repair</li>
+              <li>Steelers</li>
+              <li>Shower Doors</li>
+              <li>Mirrors</li>
             </ul>
           </div>
           <div class="col-md-3">
             <h4>Contact Us</h4>
             <ul class="contact-us">
               <li>
-                <i class="fa fa-map-marker"></i>123 Main Street, Anytown, USA
+                <a href="https://wa.me/2330244755970">
+                  <i class="fa-brands fa-whatsapp"></i>
+                Whatsapp
+                </a>
               </li>
-              <li><i class="fa fa-phone"></i>555-555-1234</li>
+              <li><i class="fa fa-phone"></i>(233)244755970</li>
               <li>
                 <i class="fa fa-envelope"></i
-                ><a href="mailto:info@glazing.com">info@glazing.com</a>
+                ><a href="mailto:mightylinkgh@gmail.com?subject=hello">mightylinkgh@gmail.com</a>
               </li>
             </ul>
           </div>
@@ -389,6 +408,11 @@
     </div>
   </body>
   <script src="index.js"></script>
+  <script>
+    window.addEventListener("load",()=>{
+      document.querySelector(".loader-div").style.display = "none"
+    })
+  </script>
 </html>
 
 <!-- <main>
