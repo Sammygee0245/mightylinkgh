@@ -247,157 +247,75 @@ html {
   }
 }
 
-.container {
+.container1{
   width: 100vw;
-  height: 110vh;
-  position: reltive;
-  padding: 100px 0 0 0;
-  scroll-snap-align: start;
-  background: url("pics/1\ \(1\).webp");
+  height: 100vh;
+  margin-top: 142px;
+  display: flex;
+  background-image: url("pics/1\ \(1\).webp");
+  background-attachment:scroll;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-color: rgba(0, 0, 0, 0.841);
+  background-blend-mode: darken;
 }
 
-.overlay {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  background-color: rgba(50, 37, 44, 0.506);
-  z-index: 2;
+.share{
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.greet {
-  font-family: sans-serif;
-  font-size: 1.5rem;
-  text-shadow: red -1px 0, cyan 2px 0;
-  font-weight: 700;
-  color: transparent;
+.share:nth-child(even){
+  background-image: url("pics/1\ \(1\).webp");
+  background-attachment:scroll;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.intro {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.5rem;
-  font-weight: 800;
-  font-family: "Roboto", sans-serif;
-  color: white;
-  text-shadow: 7px -7px 1px rgb(0, 0, 0);
-  padding: 10px;
+@media(max-width:661px){
+  .container1{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 142px;
+    display: flex;
+    background-image: url("pics/1\ \(1\).webp");
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.841);
+    background-blend-mode: darken;
+    flex-direction: column;
+  }
 }
 
-.n1 {
-  background-color: #fff;
-  font-size: 1.5rem;
-  box-shadow: -3px -3px 3px rgb(1, 1, 1);
+
+/* .container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.book1 {
-  padding: 15px 30px;
-  background-color: rgb(50, 37, 44);
-  color: #fff;
-  margin: 0 2rem 0 0;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 15px;
-  transition: all 0.5s ease-in-out;
+.anim{
+  width: 100%;
+  flex: 1;
+  background-image: url("pics/abstract-3840x2160-dark-geometry-4k-24193.jpg");
+  background-attachment:scroll;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.book1:hover {
-  background-color: #fff;
-  color: rgb(50, 37, 44);
-}
-
-/* @keyframes glitch {
-  0% {
-    text-shadow: red -3px 0, cyan 3px 0;
-  }
-  25% {
-    text-shadow: red 0 3px, cyan 0 -3px;
-  }
-  50% {
-    text-shadow: cyan -3px 0, red 3px 0;
-  }
-  50% {
-    text-shadow: cyan -3px 0, red 3px 0;
-  }
-
-  75% {
-    text-shadow: cyan 0 3px, red 0 -3px;
-  }
-  100% {
-    text-shadow: red -3px 0, cyan 3px 0;
-  }
+.anim:nth-child(odd){
+  background-image: url("pics/abstract-3840x2160-dark-geometry-4k-24193.jpg");
 } */
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-wrapper {
-  width: 100%;
-  height: 100%;
-}
-
-.img1 {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.divs {
-  width: 100vw;
-  height: 100%;
-  position: relative;
-}
-
-.one {
-  width: 70vw;
-  height: 300px;
-  border-radius: 3px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  display: grid;
-  grid-template-columns: repeat(3, 200px);
-  justify-content: center;
-  gap: 20px;
-}
-
-.first {
-  width: 200px;
-  height: 100%;
-  border-radius: 5px;
-}
-
-@media (max-width: 901px) {
-  .one {
-    width: 70vw;
-    height: 100%;
-    border-radius: 3px;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    z-index: 2;
-    display: grid;
-    grid-template-columns: repeat(1, 200px);
-    justify-content: center;
-  }
-  .first {
-    width: 300px;
-    height: 400px;
-  }
-}
 
 .page-two {
   width: 100vw;
@@ -469,6 +387,13 @@ hr {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: all .5s ease-in-out;
+}
+
+.img:hover{
+  width: 105%;
+  height: 105%;
+  cursor: pointer;
 }
 
 @media (max-width: 836px) {
