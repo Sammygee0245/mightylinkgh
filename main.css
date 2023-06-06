@@ -295,11 +295,12 @@ html {
 }
 
 
-/* .container{
+.container{
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .anim{
@@ -314,7 +315,8 @@ html {
 
 .anim:nth-child(odd){
   background-image: url("pics/abstract-3840x2160-dark-geometry-4k-24193.jpg");
-} */
+}
+
 
 
 .page-two {
@@ -685,15 +687,26 @@ hr {
 
 .mmaim {
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   background-image: url("pics/hh.jpg");
   background-position: center;
   background-size: cover;
-  backdrop-filter: blur(2px);
-  margin-top: 190px;
+  margin-top: 150px;
   padding: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: right;
+  background-color: #01011d9f;
+  background-blend-mode: multiply;
+}
+
+.abdes{
+  font-size: 23px;
+  text-align: center;
+  font-weight: 700;
+  font-family: sans-serif;
+  color: #fff;
 }
 
 .abtfp {
@@ -727,6 +740,10 @@ hr {
   display: grid;
   grid-template-columns: repeat(4, 210px);
   justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .ser {
