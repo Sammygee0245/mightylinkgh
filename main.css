@@ -286,7 +286,7 @@ html {
     background-image: url("pics/1\ \(1\).webp");
     background-attachment:scroll;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:center;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.841);
     background-blend-mode: darken;
